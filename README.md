@@ -1,6 +1,4 @@
-# Makerable_PreInterview_Assignment
-
-## Ruby on Rails CI/CD Pipeline with Docker, Kubernetes, ArgoCD, and Tekton
+# Ruby on Rails CI/CD Pipeline with Docker, Kubernetes, ArgoCD, and Tekton
 
 This project demonstrates a complete CI/CD pipeline for a Ruby on Rails application using Docker, Kubernetes, ArgoCD, and Tekton. The pipeline includes building a Docker image, deploying to Kubernetes, managing deployments with ArgoCD, and setting up Tekton pipelines for automation.
 
@@ -9,7 +7,14 @@ This project demonstrates a complete CI/CD pipeline for a Ruby on Rails applicat
 - [Project Overview](#project-overview)
 - [Prerequisites](#prerequisites)
 - [Steps Completed](#steps-completed)
-
+- [Getting Started](#getting-started)
+  - [Clone the Repository](#clone-the-repository)
+  - [Build Docker Image](#build-docker-image)
+  - [Deploy to Kubernetes](#deploy-to-kubernetes)
+  - [ArgoCD Deployment](#argocd-deployment)
+  - [Set Up Tekton Pipelines](#set-up-tekton-pipelines)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Project Overview
 
@@ -38,22 +43,15 @@ This project demonstrates the following steps in a CI/CD pipeline:
 Before running this project, ensure you have the following installed:
 
 - Docker
-- Kubernetes 
+- Kubernetes (Minikube, K3d, or any local cluster)
 - ArgoCD
 - Tekton Pipelines
 
 ## Steps Completed
 
-**- Step 1: Docker**
-  Build a Dockerfile for deploying a simple Ruby on Rails application with PostgreSQL DB  enabled. Application and DB should run on different containers.
-
-**- Step 2: Kubernetes**
-  Build a YAML file for the same application you’ve used in your first step to deploy it on Kubernetes. You can use any local cluster provider such as Minikube or K3d. The deployment of the standalone PostgreSQL pod must use Kubernetes StatefulSet. Additionally, the candidate may use any ingress controller they are comfortable with or a service mesh.
-
-**- Step 3: ArgoCD**
-  Deploy ArgoCD to manage the deployment of the previously mentioned application using GitOps. The candidate must create a private GitHub repository to manage the YAML files and for GitOps purposes. All ArgoCD config files must be present in the GitHub repository. The expected files include application.yaml to define the application to deploy, ArgoCD config maps (argocd-cm and argocd-rbac-cm), a config file for/(to add) the private GitHub repository and kubernetes manifest files.
-
-**- Step 4: Tekton**
-  Set up Tekton pipelines and the Tekton dashboard. The pipeline should download the source code from the public fork of the sample project (Which you’ve containerized in the first step), build the image, and push it to Docker Hub. The candidate is expected to manually run the pipeline from the Tekton dashboard.
+- Step 1: Dockerfile for Rails app and PostgreSQL DB
+- Step 2: Kubernetes YAML for deployment
+- Step 3: ArgoCD setup for GitOps deployment management
+- Step 4: Tekton pipelines for automated building and deployment
 
 
