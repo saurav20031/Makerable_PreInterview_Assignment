@@ -1,4 +1,4 @@
-# Makerable_-PreInterview_-Assignment
+# Makerable_PreInterview_Assignment
 
 ## Ruby on Rails CI/CD Pipeline with Docker, Kubernetes, ArgoCD, and Tekton
 
